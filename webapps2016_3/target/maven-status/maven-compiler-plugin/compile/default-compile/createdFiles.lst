@@ -1,0 +1,4 @@
+com\aa2036\webapps2016_2\entity\RegisteredUser.class
+com\aa2036\webapps2016_2\ejb\UserService.class
+com\aa2036\webapps2016_2\jsf\RegistrationUserBean.class
+com\aa2036\webapps2016_2\ejb\UserServiceBean.class

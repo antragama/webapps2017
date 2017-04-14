@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>LOGIN</title>
+    </h:head>
+    <h:body>
+        <br/>
+        register a new user <h:link value="here" outcome="registration"/>
+        
+        <h:form id="login_form" title="Login's Form" >
+             Email Address: <h:inputText id="email_address" label="Email Address" required="true" requiredMessage="Please enter your email address" title="Email Address" value="#{userLoginBean.email}"/>
+             <br/>
+             Password: <h:inputSecret id="password" label="Password" required="true" requiredMessage="Please enter your password" title="Password"/>
+             <br/>
+             <h:commandButton id="submit_form" title="Login" label="Submit Form" type="submit" value="Submit Form" action="#{userLoginBean.goToDashboard()}"/>  
+             <h:commandButton id="reset_form" title="Reset Form" label="Reset Form" type="reset" value="Reset Form" />
+         </h:form>
+        
+    </h:body>
+</html>
